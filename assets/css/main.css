@@ -66,7 +66,7 @@ img {
 	height: 64px;
 	margin-bottom: 5px;
 }
-#msgarea textarea {
+#msgarea {
     resize: none;
     overflow: hidden;
     font-size: 14px;
@@ -88,7 +88,7 @@ img {
 	-webkit-box-shadow: 1px 1px 2px #bbb inset;            /* For Chrome5+, Safari5+ */
 	box-shadow: 1px 2px 5px #bbb inset;                    /* For Latest Opera */
 }
-#msgarea textarea:focus {
+#msgarea:focus {
 	outline: none;
 }
 #msgpanel article {
