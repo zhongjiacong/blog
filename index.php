@@ -52,10 +52,13 @@
 					<textarea id="msgarea"></textarea>
 					<button id="msgbtn" type="button" disabled="disabled">留言</button>
 				</div>
-				<article>test</article>
-				<article>test</article>
-				<article>test</article>
-				<article>test</article>
+				<?php
+					require_once "protected/dbconn.php";
+					$result = mysql_query("SELECT * FROM `comment` ORDER BY `id` DESC");
+					while ($row = mysql_fetch_array($result)) {
+						echo "<article>".$row['content']."</article>";
+					}
+				?>
 			</div>
 		</div>
 	</div>
