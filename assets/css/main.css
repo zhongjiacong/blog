@@ -1,0 +1,51 @@
+/* global */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	color: #3f3f3f;
+	background-color: #ddd;
+}
+clear {
+	clear: both;
+}
+
+/* layout */
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+#header {
+	background-color: #333333;
+	height: 60px;
+	margin-bottom: 50px;
+}
+.blogpanel {
+	width: 620px;
+	float: left;
+	padding: 10px;
+}
+.msgpanel {
+	width: 320px;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+/* content */
+#avatar {
+	position: absolute;
+	top: 0;
+}
+#avatar img {
+	width: 100px;
+	height: 100px;
+	-webkit-box-shadow: 1px 1px 5px #555555;
+}
+#blogtitle {
+	line-height: 60px;
+	text-indent: 130px;
+	color: #eee;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 black;
+}
