@@ -9,6 +9,11 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<title>zhongjiacong's blog</title>
 	<script type="text/javascript">
+		baseUrl = "<?=$_SERVER['HTTP_HOST']; ?>";
+	</script>
+	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/layouts.js"></script>
+	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/msg.js"></script>
+	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-26964472-2']);
 		_gaq.push(['_setDomainName', 'zhongjiacong.com']);
@@ -20,11 +25,6 @@
 	    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-	<script type="text/javascript">
-		baseUrl = "<?=$_SERVER['HTTP_HOST']; ?>";
-	</script>
-	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/layouts.js"></script>
-	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/msg.js"></script>
 </head>
 <body>
 	<div id="header">
