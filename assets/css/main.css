@@ -21,8 +21,8 @@ img {
 }
 #header {
 	background-color: #222;
-	height: 80px;
-	margin-bottom: 60px;
+	height: 70px;
+	margin-bottom: 70px;
 	-webkit-box-shadow: 1px 2px 5px #777;
 }
 #blogpanel {
@@ -46,12 +46,12 @@ img {
 	-webkit-box-shadow: 1px 2px 8px #333;
 }
 #blogtitle {
-	font-family: "华文行楷";
-	line-height: 80px;
+	font-family: "MV Boli";
+	line-height: 70px;
 	text-indent: 140px;
 	color: #ddd;
 	font-size: 28px;
-	font-weight: bold;
+	font-weight: bolder;
 	text-shadow: 1px 2px 1px black;
 }
 #msgform {

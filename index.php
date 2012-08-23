@@ -25,7 +25,7 @@
 					<img src="<?=$assetsDir; ?>/img/avatar.jpg" alt="zhongjiacong" />
 				</a>
 			</div>
-			<div id="blogtitle">欢迎来到我的博客 ^_^</div>
+			<div id="blogtitle">Welcome to my blog ^_^</div>
 		</div>
 	</div>
 	<div id="content">
