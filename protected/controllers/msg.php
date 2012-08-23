@@ -11,10 +11,11 @@
 		return $cip;
 	}
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
+		$content = htmlspecialchars($_POST["content"]);
 		if(!isset($_POST["secret"])) {
 			require_once "../config/dbconn.php";
 			$query = "INSERT INTO `comment` (`user`, `content`, `time`) VALUES ('".
-				GetIP()."', '".$_POST["content"]."', NOW())";
+				GetIP()."', '".$content."', NOW())";
 			mysql_query($query);
 		}
 		
@@ -35,12 +36,13 @@
         else
             $emailer->AddAddress("zhongjiacong@gmail.com");
         $emailer->Subject = "blog";
-        $emailer->MsgHTML(eregi_replace("[\]",'',"IP: ".GetIP().$_POST['content']));
+        $emailer->MsgHTML(eregi_replace("[\]",'',"IP: ".GetIP()." ".$content));
         //$emailer->Body = $body;
         $emailer->Send();
 		
 		echo json_encode(array(
 			"state"=>"succeed",
+			"content"=>$content,
 		));
 	}
 ?>
