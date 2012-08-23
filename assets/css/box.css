@@ -20,7 +20,7 @@
 	z-index: -2; 
 	position: absolute; 
 	background: transparent; 
-	width: 48%; 
+	width: 40%; 
 	height: 80%; 
 	content: ''; 
 	left: 20px; 
@@ -43,7 +43,7 @@
 	z-index: -1; 
 	position: absolute; 
 	background: transparent; 
-	width: 48%; 
+	width: 40%; 
 	height: 80%; 
 	content: ''; 
 	right: 20px;  
