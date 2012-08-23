@@ -13,6 +13,7 @@
 	</script>
 	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/layouts.js"></script>
 	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/msg.js"></script>
+	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/comment.js"></script>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-26964472-2']);
@@ -51,13 +52,7 @@
 					<label for="secret">私密</label>
 					<input id="secret" type="checkbox" />
 				</div>
-				<?php
-					require_once dirname(__FILE__)."/../../config/dbconn.php";
-					$result = mysql_query("SELECT * FROM `comment` ORDER BY `id` DESC");
-					while ($row = mysql_fetch_array($result)) {
-						echo "<article>".$row['content']."</article>";
-					}
-				?>
+				<div></div>
 			</div>
 		</div>
 	</div>

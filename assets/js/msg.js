@@ -35,7 +35,8 @@ $(document).ready(function(){
 						$("#msgform button").attr("disabled","disabled");
 						$("#msgform button").html("成功^_^");
 						if(secret != "checked")
-							$("#msgform").after("<article>"+result.content+"</article>");
+							$("#msgpanel div:last-child article:nth-child(1)").before("<article>"+
+								result.content+"</article>");
 						else
 							$("#msgform input[type=checkbox]").removeAttr("checked");
 						var recover = function() {
