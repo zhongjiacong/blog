@@ -1,6 +1,4 @@
 $(document).ready(function(){
-	$("body").fadeIn("slow");
-	
 	$("#msgarea").keyup(function(){
 		if($("#msgarea").val() != "")
 			$("#msgbtn").removeAttr("disabled");

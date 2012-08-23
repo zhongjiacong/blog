@@ -14,6 +14,7 @@
 	<script type="text/javascript">
 		baseUrl = "<?=$_SERVER['HTTP_HOST']; ?>";
 	</script>
+	<script type="text/javascript" src="<?=$assetsDir; ?>/js/layouts.js"></script>
 	<script type="text/javascript" src="<?=$assetsDir; ?>/js/msg.js"></script>
 </head>
 <body>

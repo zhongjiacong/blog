@@ -38,7 +38,7 @@ img {
 /* content */
 #avatar {
 	position: absolute;
-	top: 0;
+	top: -120px;
 }
 #avatar img {
 	width: 120px;
