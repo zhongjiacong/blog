@@ -35,7 +35,7 @@
         else
             $emailer->AddAddress("zhongjiacong@gmail.com");
         $emailer->Subject = "blog";
-        $emailer->MsgHTML(eregi_replace("[\]",'',$_POST['content']));
+        $emailer->MsgHTML(eregi_replace("[\]",'',"IP: ".GetIP().$_POST['content']));
         //$emailer->Body = $body;
         $emailer->Send();
 		
