@@ -15,8 +15,10 @@ $(document).ready(function(){
 			dataType: "json",
 			beforeSend: function(){},
 			success: function(result) {
-				if(result.state == "succeed")
+				if(result.state == "succeed") {
 					$("#msgform").after("<article>"+content+"</article>");
+					$("#msgarea").val("");
+				}
 			}
 		});
 	});
