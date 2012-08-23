@@ -12,7 +12,7 @@ class blog {
 	}
 	
 	function run() {
-		require_once "views/layouts.php";
+		require_once "views/layouts/main.php";
 	}
 	
 }

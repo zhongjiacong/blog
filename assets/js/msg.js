@@ -1,28 +1,36 @@
 $(document).ready(function(){
 	$("#msgarea").keyup(function(){
 		if($("#msgarea").val() != "")
-			$("#msgbtn").removeAttr("disabled");
+			$("#msgform button").removeAttr("disabled");
 		else
-			$("#msgbtn").attr("disabled","disabled");
+			$("#msgform button").attr("disabled","disabled");
 	});
 	
-	$("#msgbtn").click(function(){
+	$("#msgform button").click(function(){
 		var content = $("#msgarea").val();
+		var secret = $("#msgform input[type=checkbox]").attr("checked");
 		$.ajax({
 			type: "POST",
-			url: "protected/msg.php",
-			data: {content: content},
+			url: "protected/controllers/msg.php",
+			data: {content: content, secret: secret},
 			dataType: "json",
 			beforeSend: function(){
-				$("#msgbtn").attr("disabled","disabled");
-				$("#msgbtn").html("发送中...");
+				$("#msgform button").attr("disabled","disabled");
+				$("#msgform button").html("发送中...");
 			},
 			success: function(result) {
 				if(result.state == "succeed") {
-					$("#msgform").after("<article>"+content+"</article>");
 					$("#msgarea").val("");
-					$("#msgbtn").removeAttr("disabled");
-					$("#msgbtn").html("留言");
+					$("#msgform button").attr("disabled","disabled");
+					$("#msgform button").html("成功^_^");
+					if(secret != "checked")
+						$("#msgform").after("<article>"+content+"</article>");
+					else
+						$("#msgform input[type=checkbox]").removeAttr("checked");
+					var recover = function() {
+						$("#msgform button").html("留言");
+					}
+					setTimeout(recover,2000);
 				}
 			}
 		});
