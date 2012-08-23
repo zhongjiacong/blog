@@ -60,6 +60,7 @@ img {
 }
 #msgbtn {
 	float: right;
+	min-width: 76px;
 }
 #msgarea {
 	width: 100%;

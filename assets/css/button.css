@@ -1,4 +1,8 @@
 /* Button */
+.button:disabled, input[type=button]:disabled, input[type=submit]:disabled, button:disabled {
+	color: #666;
+	border-color: #999;
+}
 .button, input[type=button], input[type=submit], button {
 	text-decoration: none;
 	border-color:#888;
