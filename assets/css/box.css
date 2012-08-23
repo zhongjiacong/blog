@@ -1,4 +1,4 @@
-.box {
+.box, #blogpanel article {
 	height: auto;
 	margin-bottom: 30px;
 	width: 580px;
@@ -16,7 +16,7 @@
 	behavior: url(ie-css3.htc);
 }
 
-.box:before { 
+.box:before, #blogpanel article:before { 
 	z-index: -2; 
 	position: absolute; 
 	background: transparent; 
@@ -39,7 +39,7 @@
 	behavior: url(ie-css3.htc);
 }
 
-.box:after { 
+.box:after, #blogpanel article:after { 
 	z-index: -1; 
 	position: absolute; 
 	background: transparent; 
