@@ -92,6 +92,7 @@ img {
 	outline: none;
 }
 #msgpanel article {
-	margin-bottom: 10px;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
 	border-bottom: 1px solid #bbb;
 }
