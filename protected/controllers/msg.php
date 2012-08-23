@@ -1,8 +1,20 @@
 <?php
+	function GetIP() {
+		if(!empty($_SERVER["HTTP_CLIENT_IP"]))
+			$cip = $_SERVER["HTTP_CLIENT_IP"];
+		else if(!empty($_SERVER["HTTP_X_FORWARDED_FOR"]))
+			$cip = $_SERVER["HTTP_X_FORWARDED_FOR"];
+		else if(!empty($_SERVER["REMOTE_ADDR"]))
+			$cip = $_SERVER["REMOTE_ADDR"];
+		else
+			$cip = "";
+		return $cip;
+	}
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		if(!isset($_POST["secret"])) {
 			require_once "../config/dbconn.php";
-			$query = "INSERT INTO `comment` (`content`, `time`) VALUES ('".$_POST["content"]."', NOW())";
+			$query = "INSERT INTO `comment` (`user`, `content`, `time`) VALUES ('".
+				GetIP()."', '".$_POST["content"]."', NOW())";
 			mysql_query($query);
 		}
 		
