@@ -10,6 +10,13 @@
 </article>
 */ ?>
 <article>
+	<b>100年后再打开= =</b> 08-25<br /><br />
+	看之前去洗澡，然后想了一下，会不会打开一个通向另一个世界的通道，然后洗完澡出来兴致勃勃地看了一下直播。<br />
+	哦，原来我想多了= =<br />
+	<img class="img0825" src="<?=Blog::app()->assets["dir"]; ?>/img/life/DIREKTE LIVE  Den mystiske pakken -pnes fredag kl. 18   To be opened at 6pm  4pm GMT .png">
+	<img class="img0825" src="<?=Blog::app()->assets["dir"]; ?>/img/life/DIREKTE LIVE  Den mystiske pakken -pnes fredag kl. 18   To be opened at 6pm  4pm GMT 2.png">
+</article>
+<article>
 	<b>Blog Framework</b> 08-24<br /><br />
 	历时两天，终于自己亲手写了一个web framework，有点扬眉吐气的感觉（半年前那件蛋疼的事）。<br />
 	绝知此事要躬行，写网站不能沦为只会拿个框架来写应用的傻x，如果framework都不懂的话，只能说自己真的不懂web application。<br />

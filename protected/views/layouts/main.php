@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/button.css" />
 	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/box.css" />
+	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/article.css" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<title>zhongjiacong's blog</title>
 	<script type="text/javascript">
