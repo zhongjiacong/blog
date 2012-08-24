@@ -63,18 +63,22 @@ img {
 	float: right;
 }
 #msgform input[type=checkbox] {
-	height: 18px;
+	height: 22px;
+}
+#msgform label {
+	height: 24px;
+	line-height: 24px;
 }
 #msgform button {
 	float: right;
 	min-width: 80px;
 }
-#msgarea {
+#msgform textarea {
 	width: 100%;
 	height: 64px;
 	margin-bottom: 5px;
 }
-#msgarea {
+#msgform textarea {
     resize: none;
     overflow: hidden;
     font-size: 14px;
@@ -96,7 +100,7 @@ img {
 	-webkit-box-shadow: 1px 1px 2px #bbb inset;            /* For Chrome5+, Safari5+ */
 	box-shadow: 1px 2px 5px #bbb inset;                    /* For Latest Opera */
 }
-#msgarea:focus {
+#msgform textarea:focus {
 	outline: none;
 }
 #msgpanel article {

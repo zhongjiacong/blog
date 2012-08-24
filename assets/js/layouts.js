@@ -7,8 +7,8 @@ $(document).ready(function(){
 });
 
 function arrPos(element, arr) {
-	for(var i in arr) {
-		if(arr[i] == element) {
+	for(var i = 0; i < arr.length; i++) {
+		if("\""+arr[i]+"\"" == element) {
 			return i;
 			break;
 		}
@@ -16,11 +16,12 @@ function arrPos(element, arr) {
 }
 
 function titleFont() {
-	var fontArr = new Array("'Script MT Bold'", "'MV Boli'", "'Goudy Old Style'", "'Edwardian Script ITC'", "'Curlz MT'", "'Comic Sans MS'", "'Bradley Hand ITC'");
+	var fontArr = new Array("Script MT Bold", "MV Boli", "Goudy Old Style", "Edwardian Script ITC",
+		"Curlz MT", "Comic Sans MS", "Bradley Hand ITC");
 	var currFont = $("#blogtitle").css("font-family").toString();
 	var nextFontNum = (Number(arrPos(currFont, fontArr)) + 1) % fontArr.length;
 	$("#blogtitle").fadeOut(500,function(){
-		$("#blogtitle").css("font-family",fontArr[nextFontNum]);
+		$("#blogtitle").css({"font-family":"\""+fontArr[nextFontNum]+"\""});
 		$("#blogtitle").fadeIn(1500);
 	});
 }

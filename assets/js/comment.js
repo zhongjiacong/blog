@@ -5,7 +5,7 @@ $(document).ready(function(){
 function loadMsg(page) {
 	$.ajax({
 		type: "POST",
-		url: "protected/controllers/comment.php",
+		url: "comment/list",
 		data: {page : page},
 		//dataType: "json",
 		beforeSend: function(){},

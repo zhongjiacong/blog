@@ -1,11 +1,5 @@
 <?php
 
-require_once "protected/blog.php";
-
-$config = array(
-	"assets"=>array("dir"=>"assets")
-);
-
-$myblog = new blog($config);
-
-$myblog->run();
+require_once "protected/Blog.php";
+$config = dirname(__FILE__).'/protected/config/main.php';
+Blog::createBlog($config)->run();

@@ -2,18 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" type="image/jpg" href="<?=$this->config["assets"]["dir"]; ?>/img/avatar.jpg" sizes="16x16" />
-	<link rel="stylesheet" type="text/css" href="<?=$this->config["assets"]["dir"]; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?=$this->config["assets"]["dir"]; ?>/css/button.css" />
-	<link rel="stylesheet" type="text/css" href="<?=$this->config["assets"]["dir"]; ?>/css/box.css" />
+	<link rel="icon" type="image/jpg" href="<?=Blog::app()->assets["dir"]; ?>/img/avatar.jpg" sizes="16x16" />
+	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/button.css" />
+	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/box.css" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<title>zhongjiacong's blog</title>
 	<script type="text/javascript">
 		baseUrl = "<?=$_SERVER['HTTP_HOST']; ?>";
 	</script>
-	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/layouts.js"></script>
-	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/msg.js"></script>
-	<script type="text/javascript" src="<?=$this->config["assets"]["dir"]; ?>/js/comment.js"></script>
+	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/layouts.js"></script>
+	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/msg.js"></script>
+	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/comment.js"></script>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-26964472-2']);
@@ -32,7 +32,7 @@
 		<div class="container">
 			<div id="avatar">
 				<a href="http://weibo.com/zhongjiacong">
-					<img src="<?=$this->config["assets"]["dir"]; ?>/img/avatar.jpg" alt="zhongjiacong" />
+					<img src="<?=Blog::app()->assets["dir"]; ?>/img/avatar.jpg" alt="zhongjiacong" />
 				</a>
 			</div>
 			<div id="blogtitle">Welcome to my blog ^_^</div>
@@ -47,7 +47,7 @@
 			</div>
 			<div id="msgpanel">
 				<div id="msgform">
-					<textarea id="msgarea"></textarea>
+					<textarea></textarea>
 					<button id="msgbtn" type="button" disabled="disabled">留言</button>
 					<label for="secret">私密</label>
 					<input id="secret" type="checkbox" />
