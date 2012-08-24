@@ -17,15 +17,15 @@ class MsgController extends Controller {
 	}
 	
 	public function actionSend() {
-		if($_SERVER["REQUEST_METHOD"] == "POST") {
+		if($_SERVER["REQUEST_METHOD"] == "GET") {
 			$comment = new Comment;
 			
-			$content = htmlspecialchars($_POST["content"]);
-			if(!isset($_POST["secret"])) {
+			$content = htmlspecialchars($_GET["content"]);
+			if(!isset($_GET["secret"])) {
 				$comment->user = $this->GetIP();
 				$comment->content = $content;
 				date_default_timezone_set("RPC");
-				$comment->time = time();
+				$comment->time = @date("Y-m-d H:i:s",time());
 				$comment->save();
 			}
 			

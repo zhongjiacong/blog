@@ -4,8 +4,18 @@
 		"很好，你选择了正确的浏览器^_^":
 		"亲，为什么不用chrome浏览器！请自觉换过来。因为，我只用这浏览器来开发= ="; ?>
 </article>
+<?php /*
 <article>
 	<?=$_SERVER['HTTP_USER_AGENT']; ?>
+</article>
+*/ ?>
+<article>
+	<b>Blog Framework</b> 08-24<br /><br />
+	历时两天，终于自己亲手写了一个web framework，有点扬眉吐气的感觉（半年前那件蛋疼的事）。<br />
+	绝知此事要躬行，写网站不能沦为只会拿个框架来写应用的傻x，如果framework都不懂的话，只能说自己真的不懂web application。<br />
+	虽然外观上简单，但工艺精良。<br />
+	很爱这个Blog，亲手打造的就是会比较有感情。<br />
+	之前一直很头疼自己的各种主站总是没有自己想要的feel，但我想，今天我是找到了。<br />
 </article>
 <article>
 	<b>知音难觅</b> 08-24<br /><br />
