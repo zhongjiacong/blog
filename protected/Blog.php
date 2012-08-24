@@ -77,7 +77,8 @@ class Blog {
 		
 		// $uri[0]:empty $uri[1]:blog
 		array_shift($uri);
-		array_shift($uri);
+		if($_SERVER["HTTP_HOST"] == "localhost")
+			array_shift($uri);
 		
 		$class = array_shift($uri);
 		$class = ($class != "")?$class:Blog::app()->_config["defaultController"];
