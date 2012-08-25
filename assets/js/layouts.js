@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 function arrPos(element, arr) {
 	for(var i = 0; i < arr.length; i++) {
-		if("\""+arr[i]+"\"" == element) {
+		if("'"+arr[i]+"'" == element) {
 			return i;
 			break;
 		}
@@ -21,7 +21,7 @@ function titleFont() {
 	var currFont = $("#blogtitle").css("font-family").toString();
 	var nextFontNum = (Number(arrPos(currFont, fontArr)) + 1) % fontArr.length;
 	$("#blogtitle").fadeOut(500,function(){
-		$("#blogtitle").css({"font-family":"\""+fontArr[nextFontNum]+"\""});
+		$("#blogtitle").css({"font-family":"'"+fontArr[nextFontNum]+"'"});
 		$("#blogtitle").fadeIn(1500);
 	});
 }

@@ -6,7 +6,6 @@
 	padding: 20px;
 	border: 2px solid #efefef;
 	position: relative;
-	overflow: hidden;
 	background: #ffffff; /* old browsers */
 	
 	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
@@ -22,9 +21,10 @@
 	position: absolute; 
 	background: transparent; 
 	width: 40%; 
-	height: 80%; 
+	height: 80%;
+	max-height: 120px;
 	content: ''; 
-	left: 20px; 
+	left: 15px; 
 	bottom: 8px; 
 	
 	-webkit-transform: skew(-12deg) rotate(-4deg); 
@@ -45,9 +45,10 @@
 	position: absolute; 
 	background: transparent; 
 	width: 40%; 
-	height: 80%; 
+	height: 80%;
+	max-height: 120px;
 	content: ''; 
-	right: 20px;  
+	right: 15px;  
 	bottom: 8px; 
 	
 	-webkit-transform: skew(12deg) rotate(4deg); 

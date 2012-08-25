@@ -10,11 +10,24 @@
 </article>
 */ ?>
 <article>
+	<b>回家</b> 08-26<br /><br />
+	收拾好东西准备回家的时候，也是很多同学收拾东西准备开学的时候。<br />
+	就如同学所说，回家就意味着可以大鱼大肉了。当然，对我来说还意味着另外一件事，那就是我弟弟的学习。<br />
+	虽然说起来是小，5年级，但我感觉已经不是想象中那么小了，我5年级的时候，已经有很多事情足够影响我了。<br />
+	我并不希望弟弟成绩能总是第一什么的，虽然他的成绩确实挺不错。我希望他能成为一个有思想的人，有理想并为之奋斗、会生活且富有情趣。<br />
+	家里很多人的想法都已经过时了，唯独一个最有活力的人却总是长期在外，弟弟的教育我有责任，他更有机会并且更需要机会。<br />
+	所以我带回了台式的电脑给他用，跟上时代很有必要，起码不能再像我以前那样总想着跑出去玩了。<br />
+	有一点是挺乐观的，那就是我很多事情都做得挺好，在家最孝顺也最努力，他挺乐意听我的话。<br />
+	我想我得跟他好好交流一下，业精于勤荒于嬉，立大志成就伟业的千里之行要开始积硅步了。<br />
+</article>
+<article>
 	<b>100年后再打开= =</b> 08-25<br /><br />
 	看之前去洗澡，然后想了一下，会不会打开一个通向另一个世界的通道，然后洗完澡出来兴致勃勃地看了一下直播。<br />
 	哦，原来我想多了= =<br />
-	<img class="img0825" src="<?=Blog::app()->assets["dir"]; ?>/img/life/DIREKTE LIVE  Den mystiske pakken -pnes fredag kl. 18   To be opened at 6pm  4pm GMT .png">
-	<img class="img0825" src="<?=Blog::app()->assets["dir"]; ?>/img/life/DIREKTE LIVE  Den mystiske pakken -pnes fredag kl. 18   To be opened at 6pm  4pm GMT 2.png">
+	<div>
+		<img class="img0825" src="<?=Blog::app()->assets["dir"]; ?>/img/life/DIREKTE LIVE  Den mystiske pakken -pnes fredag kl. 18   To be opened at 6pm  4pm GMT .png">
+		<img class="img0825" src="<?=Blog::app()->assets["dir"]; ?>/img/life/DIREKTE LIVE  Den mystiske pakken -pnes fredag kl. 18   To be opened at 6pm  4pm GMT 2.png">
+	</div>
 </article>
 <article>
 	<b>Blog Framework</b> 08-24<br /><br />
