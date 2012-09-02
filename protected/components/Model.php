@@ -5,6 +5,8 @@
  */
 class Model {
 	
+	public $list;
+	
 	public function __construct() {
 		$this->connectDB();
 	}

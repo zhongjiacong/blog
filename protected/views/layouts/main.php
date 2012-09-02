@@ -7,11 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/button.css" />
 	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/box.css" />
 	<link rel="stylesheet" type="text/css" href="<?=Blog::app()->assets["dir"]; ?>/css/article.css" />
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/jquery.min.js"></script>
 	<title>zhongjiacong's blog</title>
-	<script type="text/javascript">
-		baseUrl = "<?=$_SERVER['HTTP_HOST']; ?>";
-	</script>
 	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/layouts.js"></script>
 	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/msg.js"></script>
 	<script type="text/javascript" src="<?=Blog::app()->assets["dir"]; ?>/js/comment.js"></script>
@@ -20,7 +17,6 @@
 		_gaq.push(['_setAccount', 'UA-26964472-2']);
 		_gaq.push(['_setDomainName', 'zhongjiacong.com']);
 		_gaq.push(['_trackPageview']);
-	
 		(function() {
 	    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -42,9 +38,10 @@
 	<div id="content">
 		<div class="container">
 			<div id="blogpanel">
-				<?php require_once isset($_GET['page'])?
-					dirname(__FILE__)."/../blog/".intval($_GET['page']).".php":
-					dirname(__FILE__)."/../blog/1.php"; ?>
+				<?php foreach ($this->model->list as $key => $value): ?>
+						<article id="article<?=$value["id"]; ?>"></article>
+						<?=str_replace("{id}", $value["id"], $value["content"]); ?>
+				<?php endforeach; ?>
 			</div>
 			<div id="msgpanel">
 				<div id="msgform">
