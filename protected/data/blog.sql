@@ -50,13 +50,15 @@ CREATE TABLE `comment` (
   `content` text NOT NULL,
   `time` datetime NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 -- 
 -- 导出表中的数据 `comment`
 -- 
 
-INSERT INTO `comment` VALUES (1, '127.0.0.1', 'shishi', '2012-08-24 15:03:22');
-INSERT INTO `comment` VALUES (2, '127.0.0.1', '', '2012-08-24 15:04:29');
-INSERT INTO `comment` VALUES (3, '127.0.0.1', '', '2012-08-24 15:05:50');
-INSERT INTO `comment` VALUES (4, '127.0.0.1', 'fjdk', '2012-08-24 15:18:30');
+INSERT INTO `comment` VALUES (1, '', '租的哪里的服务器啊？？？', '2012-08-23 21:55:56');
+INSERT INTO `comment` VALUES (2, '', '美国的，服务器里各种不用翻墙，拿来看youtube不错', '2012-08-23 22:01:13');
+INSERT INTO `comment` VALUES (3, '116.26.127.105', '啊，在大学确实很难寻得能一起学习的人，现在不管是理工科还是文科，其实都可以学很多专业之外的知识吧！但是想要成为一个博学的人，还需要时间的积淀……另，你弟弟很幸福啊', '2012-08-27 04:48:40');
+INSERT INTO `comment` VALUES (4, '112.97.192.13', '其实我是想做个回复功能...学专业之外的知识是自由，不过如果方便认识其他学科的同学想必会更加好，好的想法都需要交流', '2012-08-27 04:51:16');
+INSERT INTO `comment` VALUES (5, '121.33.190.182', '嗯嗯，很不错，简洁，感觉很好', '2012-08-31 16:39:01');
+INSERT INTO `comment` VALUES (6, '112.97.192.58', '^_^，回学校再优化一下', '2012-08-31 16:41:39');
