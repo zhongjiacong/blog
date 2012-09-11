@@ -45,7 +45,7 @@
 			</div>
 			<div id="msgpanel">
 				<div id="msgform">
-					<textarea></textarea>
+					<textarea placeholder="可留下联系方式，如果您乐意的话"></textarea>
 					<button id="msgbtn" type="button" disabled="disabled">留言</button>
 					<label for="secret">私密</label>
 					<input id="secret" type="checkbox" />
